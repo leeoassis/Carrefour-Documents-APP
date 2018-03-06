@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lista_arquivos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.personal.carrefour.carrefourpersonal.ListaArquivosActivity">
+
+    <TextView
+        android:id="@+id/txt_meusarquivos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meus Arquivos:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_arquivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_meusarquivos">
+    <ListView
+        android:id="@+id/lista_arquivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_meusarquivos"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
